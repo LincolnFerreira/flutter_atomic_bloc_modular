@@ -1,6 +1,5 @@
 # estudo_modular
-
-A new Flutter project.
+Um projeto pessoal que visa conseguir aplicar conceitos de atomic design, cubit/bloc e modular
 
 ## Getting Started
 
