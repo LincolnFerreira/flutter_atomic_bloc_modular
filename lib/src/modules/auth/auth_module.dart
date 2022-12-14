@@ -1,4 +1,4 @@
-import 'package:estudo_modular/src/modules/auth/views/login_page.dart';
+import 'package:estudo_modular/src/modules/auth/presentation/atomic/templates/login_page.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 
 class AuthModule extends Module {

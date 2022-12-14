@@ -1,12 +1,6 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
 
-import '../../../../core/display/base_display.dart';
-import '../../../components/atoms/button_default_atom.dart';
-import '../../../components/atoms/input_atom.dart';
-import '../../../components/atoms/text_atom.dart';
-import '../blocs/events/login_event.dart';
-
 class FormInputOrganism extends StatefulWidget {
   final TextEditingController emailController = TextEditingController();
   final TextEditingController senhaController = TextEditingController();
