@@ -1,13 +1,13 @@
-abstract class LoginState {}
+// abstract class LoginState {}
 
-class LoginIdle implements LoginState {}
+// class LoginIdle implements LoginState {}
 
-class LoginSuccess implements LoginState {}
+// class LoginSuccess implements LoginState {}
 
-class LoginLoading implements LoginState {}
+// class LoginLoading implements LoginState {}
 
-class LoginFailure implements LoginState {
-  final String message;
+// class LoginFailure implements LoginState {
+//   final String message;
 
-  LoginFailure(this.message);
-}
+//   LoginFailure(this.message);
+// }

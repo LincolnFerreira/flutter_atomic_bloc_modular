@@ -5,20 +5,20 @@ class InputAtomWidget extends StatefulWidget {
   final TextEditingController? fieldController;
   final String hintText;
   final bool isObscureText;
-  Function(String?)? onChanged;
-  InputAtomWidget({
+  final Function(String?)? onChanged;
+
+  const InputAtomWidget({
     Key? key,
     required this.fieldController,
     required this.hintText,
     required this.isObscureText,
-    this.onChanged,
+    required this.onChanged,
   }) : super(key: key);
 
   @override
   State<InputAtomWidget> createState() => _InputAtomWidgetState();
 }
 
-//TODO: PESQUISAR POR QUE WIDGET QUANDO USADO STATEFUL
 class _InputAtomWidgetState extends State<InputAtomWidget> {
   @override
   Widget build(BuildContext context) {
@@ -40,10 +40,7 @@ class _InputAtomWidgetState extends State<InputAtomWidget> {
       ),
       obscureText: widget.isObscureText,
       controller: widget.fieldController,
-      onChanged: (value) {
-        widget.onChanged?.call(value);
-        print("atom: " + value);
-      },
+      onChanged: widget.onChanged,
     );
   }
 }
